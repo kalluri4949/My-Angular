@@ -1,4 +1,4 @@
-import { EventEmitter, Output } from '@angular/core';
+// import { EventEmitter, Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  @Output() emitRecipe = new EventEmitter<string>();
-  @Output() emitShopping = new EventEmitter<string>();
+  // @Output() emitRecipe = new EventEmitter<string>();
+  // @Output() emitShopping = new EventEmitter<string>();
   constructor() {}
 
   ngOnInit(): void {}
-  loadRecipes(): void {
-    console.log('recipe clicked');
-    this.emitRecipe.emit('recipe');
-  }
-  loadShopping(): void {
-    console.log('shopping clicked');
-    this.emitRecipe.emit('shopping');
-  }
+  // loadRecipes(): void {
+  //   console.log('recipe clicked');
+  //   this.emitRecipe.emit('recipe');
+  // }
+  // loadShopping(): void {
+  //   console.log('shopping clicked');
+  //   this.emitRecipe.emit('shopping');
+  // }
 }
